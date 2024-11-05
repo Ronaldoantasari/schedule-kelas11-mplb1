@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JADWAL PELAJARAN XI MPLB 1 BY NADA NUR IZATI </title>
+</head>
+<body>
+  <audio autoplay="DJ Agus.mp3" loop="DJ Agus.mp3" controls src="DJ Agus.mp3"></audio>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kelas XI MPLB 1 dengan Animasi dan Scroll</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      color: #333;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #0d47a1;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: slideIn 1.5s ease-out forwards; /* Durasi lebih lama */
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .schedule-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      margin-top: 20px;
+      height: 500px; /* Tinggi tetap untuk scroll */
+      overflow-y: auto; /* Memungkinkan scroll vertikal */
+      border: 2px solid #0d47a1; /* Border untuk kotak */
+      border-radius: 12px;
+      background-color: #ffffff; /* Warna latar belakang kotak */
+      padding: 10px; /* Padding di dalam kotak */
+    }
+
+    .day-box {
+      background: #f1f8e9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      opacity: 0; /* Awalnya tidak terlihat */
+      animation: fadeIn 0.8s ease forwards; /* Durasi animasi lebih lama */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .day-name {
+      font-size: 1.4em;
+      color: #1565c0;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .schedule {
+      list-style: none;
+      padding: 0;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .subject {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .teacher {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Jadwal Kelas XI MPLB 1</h1>
+
+  <div class="schedule-container" id="schedule">
+    <!-- Hari Senin -->
+    <div class="day-box">
+      <div class="day-name">Senin</div>
+      <ul class="schedule">
+        <li><span class="subject">Penjas</span> - <span class="teacher">Pak Hafiz</span></li>
+        <li><span class="subject">PKK</span> - <span class="teacher">Bu Sinta</span></li>
+        <li><span class="subject">Agama</span> - <span class="teacher">Pak Hasyim</span></li>
+        <li><span class="subject">Komunikasi</span> - <span class="teacher">Bu Ria</span></li>
+        <li><span class="subject">Teknologi</span> - <span class="teacher">Pak Firdaus</span></li>
+      </ul>
+    </div>
+
+    <!-- Hari Selasa -->
+    <div class="day-box">
+      <div class="day-name">Selasa</div>
+      <ul class="schedule">
+        <li><span class="subject">Matematika</span> - <span class="teacher">Bu Fitri</span></li>
+        <li><span class="subject">Kearsipan</span> - <span class="teacher">Bu Olive</span></li>
+        <li><span class="subject">Bahasa Indonesia</span> - <span class="teacher">Bu Nadia</span></li>
+      </ul>
+    </div>
+
+    <!-- Hari Rabu -->
+    <div class="day-box">
+      <div class="day-name">Rabu</div>
+      <ul class="schedule">
+        <li><span class="subject">Fiqih</span> - <span class="teacher">Pak Waris</span></li>
+        <li><span class="subject">Administrasi</span> - <span class="teacher">Bu Nada</span></li>
+        <li><span class="subject">PKN</span> - <span class="teacher">Bu Aisyah</span></li>
+        <li><span class="subject">Marketing</span> - <span class="teacher">Bu Olive</span></li>
+      </ul>
+    </div>
+
+    <!-- Hari Kamis -->
+    <div class="day-box">
+      <div class="day-name">Kamis</div>
+      <ul class="schedule">
+        <li><span class="subject">PKN</span> - <span class="teacher">Bu Aisyah</span></li>
+        <li><span class="subject">Administrasi</span> - <span class="teacher">Bu Nada</span></li>
+        <li><span class="subject">Teknologi</span> - <span class="teacher">Pak Firdaus</span></li>
+        <li><span class="subject">Bahasa Inggris</span> - <span class="teacher">Miss Gea</span></li>
+        <li><span class="subject">Bahasa Jepang</span> - <span class="teacher">Pak Ihsan</span></li>
+      </ul>
+    </div>
+
+    <!-- Hari Jumat -->
+    <div class="day-box">
+      <div class="day-name">Jumat</div>
+      <ul class="schedule">
+        <li><span class="subject">PKK</span> - <span class="teacher">Bu Sinta</span></li>
+        <li><span class="subject">MQ</span> - <span class="teacher">Pak Andika</span></li>
+        <li><span class="subject">Sejarah</span> - <span class="teacher">Bu Uwis</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Fungsi untuk menampilkan setiap day-box dengan delay
+    const scheduleBoxes = document.querySelectorAll('.day-box');
+    scheduleBoxes.forEach((box, index) => {
+      box.style.animationDelay = `${index * 0.6}s`; // Menambahkan delay lebih lambat
+      box.classList.add('fadeIn'); // Memastikan class fadeIn diterapkan
+    });
+  </script>
+
+</body>
+</html>
